@@ -2,8 +2,99 @@ body {
   margin: 0;
 }
 
-.top {
+.top-wrapper {
+  position: relative;
+}
+
+.top-image {
   height: 100vh;
   width: 100vw;
   background-image: url(image/code.jpg);
+  opacity: 0;
+}
+
+.top-content {
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  font-size: 50px;
+  text-align: center;
+  line-height: 3em;
+  font-weight: bold;
+}
+
+.content {
+  display: none;
+}
+
+/* 画面の二つ目の要素 */
+.worry {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+.worry-title {
+  height: 25vh;
+  position: relative;
+}
+
+.worry-title-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+  border-bottom: 3px double pink;
+}
+
+.worry-list {
+  height: 50vh;
+  width: 80vw;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.worry-list-text {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 3px double #87cefa;
+}
+
+.worry-list-border {
+  border-bottom: 2px solid yellow;
+}
+
+.worry-list-color-bold {
+  font-weight: bold;
+  color: red;
+}
+
+.worry-arrow {
+  height: 20vh;
+  position: relative;
+}
+
+.worry-arrow-area {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.worry-arrow-circle {
+  display: inline-block;
+  background-color: red;
+  padding: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.worry-arrow-circle:hover {
+  opacity: 0.5;
 }
