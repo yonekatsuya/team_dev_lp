@@ -95,4 +95,21 @@ $(function() {
     },500);
   });
 
+  var soccerMove = function() {
+    $('.soccer-move').toggleClass('flag');
+    if ($('.soccer-move').hasClass('flag')) {
+      $('.soccer-move').animate({
+        top: '96%'
+      },5000);
+    } else {
+      $('.soccer-move').animate({
+        top: '5%'
+      },5000);
+    }
+  };
+
+  if ($('.soccer-move').length !== 0) {
+    setInterval(soccerMove,5100);
+  }
+
 });
