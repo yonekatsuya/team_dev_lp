@@ -89,10 +89,35 @@ $(function() {
 
   // var timer = setInterval(sideBlockMove,4100);
 
+  // 悩みブロックの下部矢印押下時のアニメーションスクロール
   $(document).on('click','.worry-arrow-circle',function() {
     $("html,body").animate({
       scrollTop: $('#reason').offset().top
     },500);
+  });
+
+  $(document).on('click','#header-top',function() {
+    $("html,body").animate({
+      scrollTop: $('#top-wrapper').offset().top
+    },1000);
+  });
+
+  $(document).on('click','#header-reason',function() {
+    $("html,body").animate({
+      scrollTop: $('#reason').offset().top
+    },1000);
+  });
+
+  $(document).on('click','#header-self',function() {
+    $("html,body").animate({
+      scrollTop: $('#self-introduce').offset().top
+    },1000);
+  });
+
+  $(document).on('click','#header-thought',function() {
+    $("html,body").animate({
+      scrollTop: $('#thought').offset().top
+    },1000);
   });
 
   var soccerMove = function() {
@@ -111,5 +136,11 @@ $(function() {
   if ($('.soccer-move').length !== 0) {
     setInterval(soccerMove,5100);
   }
+
+  $(document).one('mouseover','.content',function() {
+    $('header').animate({
+      opacity: 0.4
+    },500);
+  });
 
 });

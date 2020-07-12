@@ -18,6 +18,7 @@ body {
   height: 100%;
   width: 100%;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .twitter-bottom a:hover {
@@ -37,6 +38,32 @@ body {
   text-align: center;
   font-weight: bold;
   color: white;
+}
+
+header {
+  height: 6vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #d8bfd8;
+  opacity: 0;
+  z-index: 2;
+}
+
+header > div {
+  float: right;
+}
+
+header li {
+  float: left;
+  margin-right: 30px;
+  list-style: none;
+  cursor: pointer;
+}
+
+header li:hover {
+  font-weight: bold;
 }
 
 .top-wrapper {
