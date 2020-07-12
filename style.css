@@ -98,3 +98,105 @@ body {
 .worry-arrow-circle:hover {
   opacity: 0.5;
 }
+
+/* 三つ目のブロック */
+.reason {
+  height: 170vh;
+  width: 100vw;
+}
+
+.reason-flex {
+  height: 100%;
+  display: flex;
+}
+
+.side-area {
+  height: 100%;
+  width: 10%;
+  position: relative;
+  background-color: skyblue;
+}
+
+.reason-content {
+  height: 100%;
+  width: 80%;
+  position: relative;
+  color: white;
+}
+
+/* .side-area-block {
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  transform: translateY(-0%);
+  background-color: skyblue;
+} */
+
+.reason-content-image {
+  height: 100%;
+  width: 100%;
+  background-image: url(image/night.jpg);
+  opacity: 0.8;
+}
+
+.reason-content-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.reason-content-text-title {
+  height: 25vh;
+  position: relative;
+}
+
+.reason-content-text-title > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+  border-bottom: 3px double pink;
+  font-weight: bold;
+}
+
+.reason-content-description .title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.reason-content-description .description {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fffaf0;
+  color: black;
+  padding: 10px;
+  line-height: 2.5em;
+  letter-spacing: 0.2em;
+  margin-bottom: 100px;
+}
+
+.reason-content-description .description .color-and-border {
+  color: #2769f2;
+  font-size: 20px;
+  border-bottom: 3px solid #ffa500;
+  font-weight: bold;
+}
+
+.reason-content-description .description .bold {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.reason-content-description .description .strong {
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  border-bottom: 3px solid yellow;
+}

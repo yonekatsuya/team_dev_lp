@@ -73,4 +73,26 @@ $(function() {
     setInterval(worryArrowCircleChange,1000);
   }
 
+  // var sideBlockMove = function() {
+  //   if (!$('.side-area-block').hasClass('flag')) {
+  //     $('.side-area-block').animate({
+  //       bottom: '-10%'
+  //     },4000);
+  //     $('.side-area-block').addClass('flag');
+  //   } else {
+  //     $('.side-area-block').animate({
+  //       bottom: '100%'
+  //     },4000);
+  //     $('.side-area-block').removeClass('flag');
+  //   }
+  // };
+
+  // var timer = setInterval(sideBlockMove,4100);
+
+  $(document).on('click','.worry-arrow-circle',function() {
+    $("html,body").animate({
+      scrollTop: $('#reason').offset().top
+    },500);
+  });
+
 });
