@@ -356,3 +356,68 @@ body {
   top: 0;
   right: 10%;
 }
+
+
+/* 想いのブロック */
+.thought {
+  height: 150vh;
+  width: 100vw;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  line-height: 2.5em;
+}
+
+.thought-image {
+  height: 100%;
+  width: 100%;
+  background-image: url('image/moon.jpg');
+}
+
+.thought-content-flex {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.thought-content {
+  height: 100%;
+  width: 50%;
+}
+
+.thought-content-wrap {
+  position: relative;
+  height: 100%;
+}
+
+.thought-content-wrap div {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+}
+
+.thought-content-title {
+  height: 20%;
+  width: 50%;
+  position: relative;
+}
+
+.thought-content-title div {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 45px;
+  text-align: center;
+}
+
+.thought-content-title div span {
+  border-bottom: 3px double pink;
+}
