@@ -2,6 +2,43 @@ body {
   margin: 0;
 }
 
+.twitter-bottom {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: #1DA1F2;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.twitter-bottom a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.twitter-bottom a:hover {
+  opacity: 0.5;
+}
+
+.twitter-bottom-icon {
+  font-size: 30px;
+  text-align: center;
+}
+
+.twitter-bottom-icon i {
+  color: white;
+}
+
+.twitter-bottom-text {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
 .top-wrapper {
   position: relative;
 }
