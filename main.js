@@ -48,11 +48,11 @@ $(function() {
     },500);
   };
 
-  setTimeout(topDisp,500);
-  setTimeout(topContentDisp,1000);
-  setTimeout(topTypist,500);
-  setTimeout(topChange,5000);
-  setTimeout(topWrapperScroll,6000);
+  // setTimeout(topDisp,500);
+  // setTimeout(topContentDisp,1000);
+  // setTimeout(topTypist,500);
+  // setTimeout(topChange,5000);
+  // setTimeout(topWrapperScroll,6000);
 
 
   var worryArrowCircleChange = function() {
@@ -117,6 +117,12 @@ $(function() {
   $(document).on('click','#header-thought',function() {
     $("html,body").animate({
       scrollTop: $('#thought').offset().top
+    },1000);
+  });
+
+  $(document).on('click','#header-use',function() {
+    $("html,body").animate({
+      scrollTop: $('#use-technique').offset().top
     },1000);
   });
 
