@@ -126,6 +126,12 @@ $(function() {
     },1000);
   });
 
+  $(document).on('click','#header-target',function() {
+    $("html,body").animate({
+      scrollTop: $('#target').offset().top
+    },1000);
+  });
+
   var soccerMove = function() {
     $('.soccer-move').toggleClass('flag');
     if ($('.soccer-move').hasClass('flag')) {

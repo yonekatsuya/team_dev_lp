@@ -580,3 +580,96 @@ header li:hover {
   color: #2769f2;
   border-bottom: 3px solid #ffa500;
 }
+
+
+/* 対象者・条件のブロック */
+.target {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fef5e0;
+}
+
+.target-title {
+  height: 10%;
+  position: relative;
+}
+
+.target-title-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.target-title-text span {
+  border-bottom: 5px solid #2769f2;
+}
+
+.target-middle {
+  height: 55%;
+  position: relative;
+}
+
+.target-middle-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 90%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.target-middle-content-left {
+  width: 48%;
+  border: 3px solid #ebb94d;
+  background-color: white;
+}
+
+.target-middle-content-right {
+  width: 48%;
+  border: 3px solid #ebb94d;
+  background-color: white;
+}
+
+.target-middle-content-left h2, .target-middle-content-right h2, .target-bottom-content h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.target-middle-content-left li, .target-middle-content-right li, .target-bottom-content li {
+  list-style: none;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  line-height: 2.5em;
+}
+
+.target-middle-content-left li span, .target-middle-content-right li span {
+  color: red;
+}
+
+.target-middle-content-left li img, .target-middle-content-right li img, .target-bottom-content li img {
+  display: inline-block;
+  height: 24px;
+}
+
+.target-bottom {
+  height: 30%;
+  width: 100vw;
+  position: relative;
+}
+
+.target-bottom-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 95%;
+  height: 100%;
+  border: 3px solid #ebb94d;
+  background-color: white;
+}
